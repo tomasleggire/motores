@@ -9,12 +9,17 @@ const routes = [
 ];
 export default function Navbar() {
   return (
-    <nav>
-      <img src={logo} alt="Logo" />
-      <ul>
+    <nav className="navbar">
+      <NavLink to="/">
+        <img src={logo} alt="Logo" className="navbar-logo" />
+      </NavLink>
+
+      <ul className="navbar-list">
         {routes.map((route) => (
           <li>
-            <NavLink to={route.path}>{route.title}</NavLink>
+            <NavLink to={route.path} className="navbar-list-item">
+              {route.title}
+            </NavLink>
           </li>
         ))}
       </ul>

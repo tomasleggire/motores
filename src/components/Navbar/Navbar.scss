@@ -1,0 +1,31 @@
+@import "../../theme/Colors.scss";
+
+.navbar {
+  font-family: sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 25px;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 55px;
+  border-radius: 50%;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  list-style-type: none;
+}
+
+.navbar-list-item {
+  text-decoration: none;
+}
