@@ -21,6 +21,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <AppRoutes />
+      <div className="pito"></div>
     </BrowserRouter>
   );
 }

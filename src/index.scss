@@ -19,9 +19,7 @@ svg {
 
 body {
   margin: 0;
-  margin-top: 80px;
-  min-height: calc(100dvh - 80px);
-  //Falta agregar la media query para mobile
+  min-height: 100dvh;
 }
 
 h1,
