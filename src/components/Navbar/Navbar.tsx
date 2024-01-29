@@ -16,10 +16,8 @@ export default function Navbar() {
 
       <ul className="navbar-list">
         {routes.map((route) => (
-          <li>
-            <NavLink to={route.path} className="navbar-list-item">
-              {route.title}
-            </NavLink>
+          <li className="navbar-list-item">
+            <NavLink to={route.path}>{route.title}</NavLink>
           </li>
         ))}
       </ul>

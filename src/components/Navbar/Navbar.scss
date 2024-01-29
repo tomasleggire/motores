@@ -1,13 +1,14 @@
-@import "../../theme/Colors.scss";
+@import "../../theme/variables";
 
 .navbar {
   font-family: sans-serif;
   width: 100%;
   padding: 10px 25px;
-  background-color: lightcoral;
+  background-color: $white;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  @include sombra;
 }
 
 .navbar-logo {
@@ -24,5 +25,13 @@
 }
 
 .navbar-list-item {
-  text-decoration: none;
+  > * {
+    text-decoration: none;
+  }
+  :hover {
+    text-decoration: underline;
+  }
+  :visited {
+    color: inherit;
+  }
 }

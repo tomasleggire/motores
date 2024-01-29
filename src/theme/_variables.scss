@@ -1,0 +1,14 @@
+:root {
+  --sombra: 0px 2px 9px -5px rgba(0, 0, 0, 0.75);
+}
+
+@mixin sombra {
+  box-shadow: var(--sombra);
+  -webkit-box-shadow: var(--sombra);
+  -moz-box-shadow: var(--sombra);
+}
+
+//Colores
+$white: rgb(243, 238, 238);
+$black: rgb(29, 27, 27);
+$blue: #338ed8;
