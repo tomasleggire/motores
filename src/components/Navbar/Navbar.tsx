@@ -1,23 +1,27 @@
 import logo from "../../assets/logo.png";
-import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
 
 const routes = [
-  { path: "/", title: "Home" },
-  { path: "/about", title: "About" },
-  { path: "/contact", title: "Contact" },
+  { path: "home", title: "Home" },
+  { path: "about", title: "About" },
+  { path: "contact", title: "Contact" },
 ];
 export default function Navbar() {
+  function goToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
   return (
     <nav className="navbar">
-      <NavLink to="/">
+      <a href="" onClick={goToTop}>
         <img src={logo} alt="Logo" className="navbar-logo" />
-      </NavLink>
+      </a>
 
       <ul className="navbar-list">
         {routes.map((route) => (
           <li className="navbar-list-item">
-            <NavLink to={route.path}>{route.title}</NavLink>
+            <a href={`#${route.path}`}>{route.title}</a>
           </li>
         ))}
       </ul>

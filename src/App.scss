@@ -1,6 +1,5 @@
 @import "./theme/variables";
 
-.pito {
-  width: 100%;
-  height: 100vh;
+.section {
+  @include section;
 }

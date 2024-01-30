@@ -1,11 +1,16 @@
 :root {
   --sombra: 0px 2px 9px -5px rgba(0, 0, 0, 0.75);
 }
-
+//Sombreado general
 @mixin sombra {
   box-shadow: var(--sombra);
   -webkit-box-shadow: var(--sombra);
   -moz-box-shadow: var(--sombra);
+}
+//Estilos para cada container de las sections
+@mixin section {
+  min-height: 100vh;
+  scroll-snap-align: start;
 }
 
 //Colores
