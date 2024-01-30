@@ -3,7 +3,6 @@
 .navbar {
   font-family: sans-serif;
   position: fixed;
-  outline: auto;
   top: 0;
   left: 0;
   width: 100%;
@@ -12,6 +11,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  transition: 0.4s;
+}
+
+.scrolled {
+  background-color: red;
 }
 
 .navbar-logo {
