@@ -7,10 +7,10 @@ const routes = [
   { path: "contact", title: "Contact" },
 ];
 export default function Navbar() {
-  function goToTop() {
+  const goToTop = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-  }
+  };
 
   return (
     <nav className="navbar">

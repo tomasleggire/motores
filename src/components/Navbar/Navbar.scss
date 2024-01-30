@@ -2,13 +2,16 @@
 
 .navbar {
   font-family: sans-serif;
+  position: fixed;
+  outline: auto;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 10px 25px;
-  background-color: $white;
+  background-color: $blue;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  @include sombra;
 }
 
 .navbar-logo {
